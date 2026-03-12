@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 5 pastel color scheme */
+  --pastel-mint: #b8e6d5;
+  --pastel-lavender: #d4c5f9;
+  --pastel-peach: #ffd6ba;
+  --pastel-sky: #b8d4e8;
+  --pastel-charcoal: #4a4a5a;
+  --background: #faf9f7;
+  --foreground: #4a4a5a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
