@@ -1,15 +1,48 @@
 import Link from "next/link";
+import Image from "next/image";
+import { StoreBadges } from "@/components/StoreBadges";
 
-const apps = [
+type AppTile = {
+  id: string;
+  name: string;
+  description: string;
+  logo: string;
+  href?: string;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
+};
+
+const apps: AppTile[] = [
   {
     id: "cavaro",
     name: "Cavaro Cigar",
-    description: "Your personal cigar companion — track your collection, discover new blends, and log tasting notes.",
-    accentClass: "bg-pastel-peach",
-    icon: "🌿",
-    href: "#",
+    description:
+      "Your personal cigar companion — track your collection, discover new blends, and log tasting notes.",
+    logo: "/images/cavaro-icon.png",
+    href: "https://cavaroapp.com",
+    appStoreUrl: "https://apps.apple.com/app/cavaro",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.brannonglover.cavaro",
   },
-  // More apps can be added here in the future
+  {
+    id: "bag-count",
+    name: "Bag Count",
+    description:
+      "Your cornhole scoring companion — track bags to 21, run the clock, and save game history.",
+    logo: "/images/bag-count-icon.png",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.brannonglover.bagcount",
+  },
+  {
+    id: "bikeops",
+    name: "Bike Ops",
+    description:
+      "Bike repair shop software for bookings, repair boards, customer messaging, payments, and review follow-ups.",
+    logo: "/images/bikeops-icon.png",
+    href: "https://bikeops.co",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.brannonglover.bikeops.app",
+  },
 ];
 
 export default function Home() {
@@ -35,26 +68,38 @@ export default function Home() {
         </h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {apps.map((app) => (
-            <Link
+            <div
               key={app.id}
-              href={app.href}
-              className="group block rounded-2xl border-2 border-pastel-charcoal/10 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-pastel-charcoal/20 hover:-translate-y-1"
+              className="group rounded-2xl border-2 border-pastel-charcoal/10 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-pastel-charcoal/20"
             >
-              <div
-                className={`w-14 h-14 rounded-xl ${app.accentClass} flex items-center justify-center text-2xl mb-4`}
-              >
-                {app.icon}
-              </div>
-              <h3 className="text-xl font-semibold text-pastel-charcoal mb-2 group-hover:text-pastel-mint transition-colors">
+              <Image
+                src={app.logo}
+                alt={`${app.name} app icon`}
+                width={64}
+                height={64}
+                className="mb-4 h-16 w-16 rounded-[22%] shadow-sm ring-1 ring-pastel-charcoal/10"
+              />
+              <h3 className="text-xl font-semibold text-pastel-charcoal mb-2">
                 {app.name}
               </h3>
               <p className="text-pastel-charcoal/70 text-sm leading-relaxed">
                 {app.description}
               </p>
-              <span className="inline-block mt-4 text-sm font-medium text-pastel-charcoal/80 group-hover:text-pastel-mint transition-colors">
-                Learn more →
-              </span>
-            </Link>
+              {app.href ? (
+                <Link
+                  href={app.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 text-sm font-medium text-pastel-charcoal/80 hover:text-pastel-mint transition-colors"
+                >
+                  Learn more →
+                </Link>
+              ) : null}
+              <StoreBadges
+                appStoreUrl={app.appStoreUrl}
+                playStoreUrl={app.playStoreUrl}
+              />
+            </div>
           ))}
         </div>
       </section>
