@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Support | Glover Labs",
@@ -76,11 +77,7 @@ export default function SupportPage() {
         </div>
       </section>
 
-      <footer className="border-t border-pastel-charcoal/10 mt-20 py-8">
-        <div className="max-w-6xl mx-auto px-6 text-center text-sm text-pastel-charcoal/60">
-          © {new Date().getFullYear()} Glover Labs. All rights reserved.
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

@@ -1,6 +1,5 @@
 type StoreBadgesProps = {
   appStoreUrl?: string;
-  playStoreUrl?: string;
 };
 
 function AppStoreBadge({ href }: { href: string }) {
@@ -49,59 +48,12 @@ function AppStoreBadge({ href }: { href: string }) {
   );
 }
 
-function GooglePlayBadge({ href }: { href: string }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Get it on Google Play"
-      className="inline-flex h-10 transition-opacity hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pastel-charcoal"
-    >
-      <svg
-        viewBox="0 0 135 40"
-        className="h-10 w-auto"
-        role="img"
-        aria-hidden
-      >
-        <rect width="135" height="40" rx="6" fill="#000" />
-        <path fill="#00D9FF" d="M9.5 7.8 22.8 20 9.5 32.2a2.2 2.2 0 0 1-.4-1.2V9a2.2 2.2 0 0 1 .4-1.2z" />
-        <path fill="#FFE000" d="M22.8 20 9.5 7.8l6.8 6.8z" />
-        <path fill="#FF3A44" d="M22.8 20 9.5 32.2l6.8-6.8z" />
-        <path fill="#00F076" d="M22.8 20l6.8 6.8-13.3 7.7z" />
-        <text
-          x="36"
-          y="14"
-          fill="#fff"
-          fontSize="7.5"
-          fontFamily="system-ui, sans-serif"
-          letterSpacing="0.04em"
-        >
-          GET IT ON
-        </text>
-        <text
-          x="36"
-          y="28"
-          fill="#fff"
-          fontSize="14"
-          fontFamily="system-ui, sans-serif"
-          fontWeight="600"
-          letterSpacing="-0.02em"
-        >
-          Google Play
-        </text>
-      </svg>
-    </a>
-  );
-}
-
-export function StoreBadges({ appStoreUrl, playStoreUrl }: StoreBadgesProps) {
-  if (!appStoreUrl && !playStoreUrl) return null;
+export function StoreBadges({ appStoreUrl }: StoreBadgesProps) {
+  if (!appStoreUrl) return null;
 
   return (
-    <div className="mt-6 flex flex-wrap gap-2">
-      {appStoreUrl ? <AppStoreBadge href={appStoreUrl} /> : null}
-      {playStoreUrl ? <GooglePlayBadge href={playStoreUrl} /> : null}
+    <div className="mt-auto flex flex-wrap gap-2 pt-6">
+      <AppStoreBadge href={appStoreUrl} />
     </div>
   );
 }

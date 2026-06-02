@@ -26,9 +26,11 @@ export default function RootLayout({
             <Link href="/" className="text-xl font-semibold text-pastel-charcoal hover:text-pastel-mint transition-colors">
               Glover Labs
             </Link>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-6">
               <Link href="/" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Work</Link>
               <Link href="/support" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Support</Link>
+              <Link href="/terms" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Terms</Link>
+              <Link href="/privacy" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Privacy</Link>
             </div>
           </nav>
         </header>

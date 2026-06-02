@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { SiteFooter } from "@/components/SiteFooter";
 import { StoreBadges } from "@/components/StoreBadges";
 
 type AppTile = {
@@ -70,7 +71,7 @@ export default function Home() {
           {apps.map((app) => (
             <div
               key={app.id}
-              className="group rounded-2xl border-2 border-pastel-charcoal/10 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-pastel-charcoal/20"
+              className="group flex h-full flex-col rounded-2xl border-2 border-pastel-charcoal/10 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-pastel-charcoal/20"
             >
               <Image
                 src={app.logo}
@@ -82,7 +83,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-pastel-charcoal mb-2">
                 {app.name}
               </h3>
-              <p className="text-pastel-charcoal/70 text-sm leading-relaxed">
+              <p className="flex-1 text-pastel-charcoal/70 text-sm leading-relaxed">
                 {app.description}
               </p>
               {app.href ? (
@@ -95,10 +96,7 @@ export default function Home() {
                   Learn more →
                 </Link>
               ) : null}
-              <StoreBadges
-                appStoreUrl={app.appStoreUrl}
-                playStoreUrl={app.playStoreUrl}
-              />
+              <StoreBadges appStoreUrl={app.appStoreUrl} />
             </div>
           ))}
         </div>
@@ -123,11 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-pastel-charcoal/10 mt-20 py-8">
-        <div className="max-w-6xl mx-auto px-6 text-center text-sm text-pastel-charcoal/60">
-          © {new Date().getFullYear()} Glover Labs. All rights reserved.
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }
