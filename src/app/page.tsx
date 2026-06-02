@@ -51,7 +51,7 @@ export default function Home() {
     <main className="min-h-screen">
       <section className="relative overflow-hidden hero-mesh">
         <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
-          <p className="mb-3 font-medium uppercase tracking-widest text-accent text-sm">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
             Indie software studio
           </p>
           <h1 className="font-display text-4xl font-bold tracking-tight text-ink md:text-6xl mb-4 text-balance">
@@ -78,7 +78,7 @@ export default function Home() {
                 alt={`${app.name} app icon`}
                 width={64}
                 height={64}
-                className="mb-4 h-16 w-16 rounded-[22%] shadow-md ring-1 ring-border"
+                className="mb-4 h-16 w-16 rounded-[22%] shadow-[0_2px_8px_-2px_rgba(15,23,42,0.12)] ring-1 ring-border ring-offset-2 ring-offset-surface-elevated"
               />
               <h3 className="font-display text-xl font-semibold text-ink mb-2">
                 {app.name}
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-2xl border border-accent/20 bg-accent-soft/40 p-8 text-center md:p-12">
+        <div className="cta-panel">
           <h3 className="font-display text-xl font-semibold text-ink mb-2">
             Need help with an app?
           </h3>

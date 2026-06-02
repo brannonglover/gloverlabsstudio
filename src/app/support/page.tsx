@@ -24,7 +24,7 @@ export default function SupportPage() {
             <div className="space-y-3">
               <a
                 href="mailto:support@gloverlabs.com?subject=Cavaro%20Cigar%20Support"
-                className="flex items-center gap-3 rounded-xl border border-border p-4 transition-colors hover:border-accent/30 hover:bg-accent-soft/50"
+                className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-all hover:border-accent/40 hover:bg-accent-soft hover:shadow-glow-sm"
               >
                 <span className="text-2xl" aria-hidden>
                   🌿
@@ -49,7 +49,7 @@ export default function SupportPage() {
             </a>
           </div>
 
-          <div className="rounded-2xl border border-warm/20 bg-warm-soft/60 p-6">
+          <div className="warm-panel">
             <h2 className="section-title mb-2">Common questions</h2>
             <ul className="space-y-2 text-sm text-ink-muted">
               <li>• How do I reset my password?</li>

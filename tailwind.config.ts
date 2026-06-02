@@ -1,19 +1,19 @@
 import type { Config } from "tailwindcss";
 
 const colors = {
-  ink: "#1a2332",
-  "ink-muted": "#4a5568",
-  surface: "#f6f3ed",
-  "surface-elevated": "#fffcf7",
-  border: "#e2ddd3",
+  ink: "#0f172a",
+  "ink-muted": "#475569",
+  surface: "#e8ecf1",
+  "surface-elevated": "#ffffff",
+  border: "#c8d3df",
   accent: {
-    DEFAULT: "#0f766e",
-    hover: "#0d9488",
-    soft: "#ccfbf1",
+    DEFAULT: "#0d9488",
+    hover: "#0f766e",
+    soft: "#e0f2f1",
   },
   warm: {
-    DEFAULT: "#c2410c",
-    soft: "#ffedd5",
+    DEFAULT: "#d97706",
+    soft: "#fffbeb",
   },
 } as const;
 
@@ -33,6 +33,10 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-outfit)", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        glow: "0 4px 24px -6px rgba(13, 148, 136, 0.28)",
+        "glow-sm": "0 2px 12px -4px rgba(13, 148, 136, 0.22)",
       },
     },
   },

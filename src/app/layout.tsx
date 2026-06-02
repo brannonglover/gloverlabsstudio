@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${outfit.variable} font-sans antialiased page-mesh`}
       >
-        <header className="sticky top-0 z-50 border-b border-border/80 bg-surface-elevated/75 backdrop-blur-md">
+        <header className="sticky top-0 z-50 border-b border-border bg-surface-elevated/95 shadow-[0_1px_3px_0_rgba(15,23,42,0.06)] backdrop-blur-md">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <Link
               href="/"
