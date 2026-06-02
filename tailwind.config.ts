@@ -1,5 +1,22 @@
 import type { Config } from "tailwindcss";
 
+const colors = {
+  ink: "#1a2332",
+  "ink-muted": "#4a5568",
+  surface: "#f6f3ed",
+  "surface-elevated": "#fffcf7",
+  border: "#e2ddd3",
+  accent: {
+    DEFAULT: "#0f766e",
+    hover: "#0d9488",
+    soft: "#ccfbf1",
+  },
+  warm: {
+    DEFAULT: "#c2410c",
+    soft: "#ffedd5",
+  },
+} as const;
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,16 +26,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        "pastel-mint": "var(--pastel-mint)",
-        "pastel-lavender": "var(--pastel-lavender)",
-        "pastel-peach": "var(--pastel-peach)",
-        "pastel-sky": "var(--pastel-sky)",
-        "pastel-charcoal": "var(--pastel-charcoal)",
+        background: colors.surface,
+        foreground: colors.ink,
+        ...colors,
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-outfit)", "system-ui", "sans-serif"],
       },
     },
   },

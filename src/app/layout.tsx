@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Outfit } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
@@ -8,10 +8,18 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
 export const metadata: Metadata = {
   title: "Glover Labs | Software Studio",
   description: "Glover Labs - Showcasing innovative apps and digital experiences",
 };
+
+const navLinkClass =
+  "text-sm font-medium text-ink-muted transition-colors hover:text-accent";
 
 export default function RootLayout({
   children,
@@ -20,17 +28,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} font-sans antialiased`}>
-        <header className="border-b border-pastel-charcoal/20 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <Link href="/" className="text-xl font-semibold text-pastel-charcoal hover:text-pastel-mint transition-colors">
+      <body
+        className={`${dmSans.variable} ${outfit.variable} font-sans antialiased page-mesh`}
+      >
+        <header className="sticky top-0 z-50 border-b border-border/80 bg-surface-elevated/75 backdrop-blur-md">
+          <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <Link
+              href="/"
+              className="font-display text-xl font-semibold tracking-tight text-ink transition-colors hover:text-accent"
+            >
               Glover Labs
             </Link>
             <div className="flex flex-wrap gap-6">
-              <Link href="/" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Work</Link>
-              <Link href="/support" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Support</Link>
-              <Link href="/terms" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Terms</Link>
-              <Link href="/privacy" className="text-pastel-charcoal/80 hover:text-pastel-mint transition-colors">Privacy</Link>
+              <Link href="/" className={navLinkClass}>
+                Apps
+              </Link>
+              <Link href="/support" className={navLinkClass}>
+                Support
+              </Link>
             </div>
           </nav>
         </header>

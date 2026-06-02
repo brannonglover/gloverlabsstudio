@@ -12,14 +12,10 @@ export default function TermsPage() {
   return (
     <main className="min-h-screen">
       <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h1 className="text-4xl font-bold text-pastel-charcoal mb-2">
-          Terms of Service
-        </h1>
-        <p className="text-sm text-pastel-charcoal/60 mb-12">
-          Last updated: June 2, 2026
-        </p>
+        <h1 className="page-header mb-2 font-display">Terms of Service</h1>
+        <p className="mb-12 text-sm text-ink-muted">Last updated: June 2, 2026</p>
 
-        <div className="space-y-8 text-pastel-charcoal/80 leading-relaxed">
+        <div className="prose-body legal-section">
           <section>
             <p>
               These Terms of Service (&quot;Terms&quot;) govern your access to
@@ -32,7 +28,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               1. Our Services
             </h2>
             <p>
@@ -45,7 +41,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               2. Eligibility and accounts
             </h2>
             <p>
@@ -56,7 +52,7 @@ export default function TermsPage() {
               promptly at{" "}
               <a
                 href="mailto:support@gloverlabs.com"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 support@gloverlabs.com
               </a>{" "}
@@ -65,7 +61,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               3. Acceptable use
             </h2>
             <p className="mb-3">You agree not to:</p>
@@ -93,7 +89,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               4. Your content
             </h2>
             <p>
@@ -107,7 +103,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               5. Purchases and subscriptions
             </h2>
             <p>
@@ -120,7 +116,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               6. Intellectual property
             </h2>
             <p>
@@ -133,7 +129,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               7. Disclaimers
             </h2>
             <p>
@@ -147,7 +143,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               8. Limitation of liability
             </h2>
             <p>
@@ -164,7 +160,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               9. Termination
             </h2>
             <p>
@@ -177,7 +173,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               10. Changes
             </h2>
             <p>
@@ -189,7 +185,7 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               11. Governing law
             </h2>
             <p>
@@ -201,28 +197,28 @@ export default function TermsPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               12. Contact
             </h2>
             <p>
               Questions about these Terms:{" "}
               <a
                 href="mailto:hello@gloverlabs.com"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 hello@gloverlabs.com
               </a>
               . App support:{" "}
               <Link
                 href="/support"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 Support page
               </Link>
               . See also our{" "}
               <Link
                 href="/privacy"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 Privacy Policy
               </Link>

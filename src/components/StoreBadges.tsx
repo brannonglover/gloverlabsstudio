@@ -9,7 +9,7 @@ function AppStoreBadge({ href }: { href: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Download on the App Store"
-      className="inline-flex h-10 transition-opacity hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pastel-charcoal"
+      className="inline-flex h-10 transition-opacity hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       <svg
         viewBox="0 0 120 40"

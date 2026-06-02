@@ -12,14 +12,10 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen">
       <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <h1 className="text-4xl font-bold text-pastel-charcoal mb-2">
-          Privacy Policy
-        </h1>
-        <p className="text-sm text-pastel-charcoal/60 mb-12">
-          Last updated: June 2, 2026
-        </p>
+        <h1 className="page-header mb-2 font-display">Privacy Policy</h1>
+        <p className="mb-12 text-sm text-ink-muted">Last updated: June 2, 2026</p>
 
-        <div className="space-y-8 text-pastel-charcoal/80 leading-relaxed">
+        <div className="prose-body legal-section">
           <section>
             <p>
               Glover Labs (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
@@ -33,7 +29,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               1. Information we collect
             </h2>
             <p className="mb-3">
@@ -42,28 +38,28 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong className="text-pastel-charcoal">Account information</strong>{" "}
+                <strong className="text-ink">Account information</strong>{" "}
                 — such as name, email address, and authentication identifiers if
                 you create an account or sign in
               </li>
               <li>
-                <strong className="text-pastel-charcoal">App content you provide</strong>{" "}
+                <strong className="text-ink">App content you provide</strong>{" "}
                 — such as profiles, preferences, notes, scores, bookings, or
                 other data you enter into an app
               </li>
               <li>
-                <strong className="text-pastel-charcoal">Usage and device data</strong>{" "}
+                <strong className="text-ink">Usage and device data</strong>{" "}
                 — such as app version, device type, operating system, crash logs,
                 and general interaction data to operate and improve the Services
               </li>
               <li>
-                <strong className="text-pastel-charcoal">Purchase information</strong>{" "}
+                <strong className="text-ink">Purchase information</strong>{" "}
                 — subscription or in-app purchase status as reported by Apple,
                 Google, or other payment platforms (we do not receive your full
                 payment card number from those platforms)
               </li>
               <li>
-                <strong className="text-pastel-charcoal">Communications</strong> — if
+                <strong className="text-ink">Communications</strong> — if
                 you contact support, we collect the information you send us
               </li>
             </ul>
@@ -75,7 +71,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               2. How we use information
             </h2>
             <p className="mb-3">We use information to:</p>
@@ -90,7 +86,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               3. Legal bases (EEA/UK users)
             </h2>
             <p>
@@ -103,7 +99,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               4. How we share information
             </h2>
             <p className="mb-3">
@@ -131,7 +127,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               5. Data retention
             </h2>
             <p>
@@ -143,7 +139,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               6. Security
             </h2>
             <p>
@@ -155,7 +151,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               7. Children
             </h2>
             <p>
@@ -168,7 +164,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               8. Your choices and rights
             </h2>
             <p className="mb-3">
@@ -177,7 +173,7 @@ export default function PrivacyPage() {
               certain processing. To make a request, email{" "}
               <a
                 href="mailto:hello@gloverlabs.com"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 hello@gloverlabs.com
               </a>
@@ -192,7 +188,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               9. International transfers
             </h2>
             <p>
@@ -204,7 +200,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               10. Third-party links and services
             </h2>
             <p>
@@ -215,7 +211,7 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               11. Changes to this policy
             </h2>
             <p>
@@ -227,28 +223,28 @@ export default function PrivacyPage() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-pastel-charcoal mb-3">
+            <h2>
               12. Contact us
             </h2>
             <p>
               Privacy questions or requests:{" "}
               <a
                 href="mailto:hello@gloverlabs.com"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 hello@gloverlabs.com
               </a>
               . App support:{" "}
               <Link
                 href="/support"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 Support page
               </Link>
               . See also our{" "}
               <Link
                 href="/terms"
-                className="text-pastel-charcoal font-medium hover:text-pastel-mint transition-colors"
+                className="text-link"
               >
                 Terms of Service
               </Link>

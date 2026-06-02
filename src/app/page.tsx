@@ -49,41 +49,41 @@ const apps: AppTile[] = [
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Hero section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-pastel-mint/40 via-pastel-lavender/30 to-pastel-sky/40" />
-        <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-28">
-          <h1 className="text-4xl md:text-6xl font-bold text-pastel-charcoal mb-4">
+      <section className="relative overflow-hidden hero-mesh">
+        <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <p className="mb-3 font-medium uppercase tracking-widest text-accent text-sm">
+            Indie software studio
+          </p>
+          <h1 className="font-display text-4xl font-bold tracking-tight text-ink md:text-6xl mb-4 text-balance">
             Glover Labs
           </h1>
-          <p className="text-xl text-pastel-charcoal/80 max-w-2xl">
+          <p className="text-xl text-ink-muted max-w-2xl leading-relaxed">
             Crafting thoughtful software experiences. Explore our apps below.
           </p>
         </div>
       </section>
 
-      {/* App tiles */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-semibold text-pastel-charcoal mb-10">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <h2 className="font-display text-2xl font-semibold tracking-tight text-ink mb-10">
           Our Apps
         </h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {apps.map((app) => (
             <div
               key={app.id}
-              className="group flex h-full flex-col rounded-2xl border-2 border-pastel-charcoal/10 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:border-pastel-charcoal/20"
+              className="group flex h-full flex-col card-surface-interactive p-6"
             >
               <Image
                 src={app.logo}
                 alt={`${app.name} app icon`}
                 width={64}
                 height={64}
-                className="mb-4 h-16 w-16 rounded-[22%] shadow-sm ring-1 ring-pastel-charcoal/10"
+                className="mb-4 h-16 w-16 rounded-[22%] shadow-md ring-1 ring-border"
               />
-              <h3 className="text-xl font-semibold text-pastel-charcoal mb-2">
+              <h3 className="font-display text-xl font-semibold text-ink mb-2">
                 {app.name}
               </h3>
-              <p className="flex-1 text-pastel-charcoal/70 text-sm leading-relaxed">
+              <p className="flex-1 text-sm leading-relaxed text-ink-muted">
                 {app.description}
               </p>
               {app.href ? (
@@ -91,7 +91,7 @@ export default function Home() {
                   href={app.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 text-sm font-medium text-pastel-charcoal/80 hover:text-pastel-mint transition-colors"
+                  className="text-link mt-4 inline-block text-sm"
                 >
                   Learn more →
                 </Link>
@@ -102,20 +102,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Support CTA */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <div className="rounded-2xl bg-pastel-lavender/30 border border-pastel-lavender/50 p-8 md:p-12 text-center">
-          <h3 className="text-xl font-semibold text-pastel-charcoal mb-2">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-2xl border border-accent/20 bg-accent-soft/40 p-8 text-center md:p-12">
+          <h3 className="font-display text-xl font-semibold text-ink mb-2">
             Need help with an app?
           </h3>
-          <p className="text-pastel-charcoal/70 mb-6 max-w-xl mx-auto">
+          <p className="mx-auto mb-6 max-w-xl text-ink-muted">
             Our support team is here to assist you. Whether you have questions,
             found a bug, or need guidance — we&apos;ve got you covered.
           </p>
-          <Link
-            href="/support"
-            className="inline-flex items-center gap-2 rounded-full bg-pastel-charcoal text-white px-6 py-3 font-medium hover:bg-pastel-charcoal/90 transition-colors"
-          >
+          <Link href="/support" className="btn-primary">
             Get Support
           </Link>
         </div>

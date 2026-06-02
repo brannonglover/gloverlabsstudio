@@ -3,19 +3,77 @@
 @tailwind utilities;
 
 :root {
-  /* 5 pastel color scheme */
-  --pastel-mint: #b8e6d5;
-  --pastel-lavender: #d4c5f9;
-  --pastel-peach: #ffd6ba;
-  --pastel-sky: #b8d4e8;
-  --pastel-charcoal: #4a4a5a;
-  --background: #faf9f7;
-  --foreground: #4a4a5a;
+  --ink: #1a2332;
+  --ink-muted: #4a5568;
+  --surface: #f6f3ed;
+  --surface-elevated: #fffcf7;
+  --border: #e2ddd3;
+  --accent: #0f766e;
+  --accent-hover: #0d9488;
+  --accent-soft: #ccfbf1;
+  --warm: #c2410c;
+  --warm-soft: #ffedd5;
+  --glow-teal: #5eead4;
+  --glow-amber: #fcd34d;
+  --glow-rose: #fda4af;
+  --background: var(--surface);
+  --foreground: var(--ink);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+@layer components {
+  .page-mesh {
+    background-color: var(--surface);
+    background-image:
+      radial-gradient(ellipse 80% 60% at 10% 0%, color-mix(in srgb, var(--glow-amber) 35%, transparent), transparent 55%),
+      radial-gradient(ellipse 70% 50% at 90% 10%, color-mix(in srgb, var(--glow-teal) 28%, transparent), transparent 50%),
+      radial-gradient(ellipse 60% 40% at 50% 100%, color-mix(in srgb, var(--glow-rose) 18%, transparent), transparent 45%);
+  }
+
+  .hero-mesh {
+    background-image:
+      radial-gradient(ellipse 90% 70% at 0% 50%, color-mix(in srgb, var(--glow-teal) 40%, transparent), transparent 60%),
+      radial-gradient(ellipse 80% 60% at 100% 20%, color-mix(in srgb, var(--glow-amber) 35%, transparent), transparent 55%),
+      linear-gradient(135deg, color-mix(in srgb, var(--accent-soft) 50%, var(--surface)) 0%, var(--surface) 70%);
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-border bg-surface-elevated shadow-sm;
+    @apply transition-all duration-300;
+  }
+
+  .card-surface-interactive {
+    @apply card-surface hover:border-accent hover:shadow-md;
+  }
+
+  .text-link {
+    @apply font-medium text-accent transition-colors hover:text-accent-hover;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 font-medium text-surface-elevated;
+    @apply transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
+
+  .page-header {
+    @apply text-4xl font-bold tracking-tight text-ink md:text-5xl;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-ink;
+  }
+
+  .prose-body {
+    @apply space-y-8 leading-relaxed text-ink-muted;
+  }
+
+  .legal-section h2 {
+    @apply section-title mb-3;
+  }
 }
 
 @layer utilities {
