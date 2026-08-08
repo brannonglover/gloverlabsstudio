@@ -22,8 +22,6 @@ const apps: AppTile[] = [
     logo: "/images/cavaro-icon.png",
     href: "https://cavaroapp.com",
     appStoreUrl: "https://apps.apple.com/app/cavaro",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.brannonglover.cavaro",
   },
   {
     id: "bag-count",
@@ -31,6 +29,7 @@ const apps: AppTile[] = [
     description:
       "Your cornhole scoring companion — track bags to 21, run the clock, and save game history.",
     logo: "/images/bag-count-icon.png",
+    appStoreUrl: "https://apps.apple.com/app/bag-count",
     playStoreUrl:
       "https://play.google.com/store/apps/details?id=com.brannonglover.bagcount",
   },
@@ -96,7 +95,7 @@ export default function Home() {
                   Learn more →
                 </Link>
               ) : null}
-              <StoreBadges appStoreUrl={app.appStoreUrl} />
+              <StoreBadges appStoreUrl={app.appStoreUrl} playStoreUrl={app.playStoreUrl} />
             </div>
           ))}
         </div>
