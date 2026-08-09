@@ -40,8 +40,6 @@ const apps: AppTile[] = [
       "Bike repair shop software for bookings, repair boards, customer messaging, payments, and review follow-ups.",
     logo: "/images/bikeops-icon.png",
     href: "https://bikeops.co",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.brannonglover.bikeops.app",
   },
 ];
 
