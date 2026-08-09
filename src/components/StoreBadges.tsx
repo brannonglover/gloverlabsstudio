@@ -88,7 +88,6 @@ function PlayStoreBadge({ href }: { href: string }) {
           fontSize="7"
           fontFamily="system-ui, -apple-system, sans-serif"
           letterSpacing="0.03em"
-          textTransform="uppercase"
         >
           GET IT ON
         </text>
