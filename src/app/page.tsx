@@ -15,6 +15,13 @@ type AppTile = {
 
 const apps: AppTile[] = [
   {
+    id: "dailyfold",
+    name: "DailyFold",
+    description:
+      "A clean reading app — swipe through full-screen stories from hundreds of trusted sources and get a For You feed that learns what you like.",
+    logo: "/images/dailyfold-icon.png",
+  },
+  {
     id: "cavaro",
     name: "Cavaro Cigar",
     description:

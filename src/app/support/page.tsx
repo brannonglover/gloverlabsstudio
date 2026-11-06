@@ -3,7 +3,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Support | Glover Labs",
-  description: "Get help with Glover Labs apps — Cavaro Cigar and more.",
+  description: "Get help with Glover Labs apps — DailyFold, Cavaro Cigar and more.",
 };
 
 export default function SupportPage() {
@@ -23,7 +23,21 @@ export default function SupportPage() {
             </p>
             <div className="space-y-3">
               <a
-                href="mailto:support@gloverlabs.com?subject=Cavaro%20Cigar%20Support"
+                href="mailto:support@gloverlabsstudio.com?subject=DailyFold%20Support"
+                className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-all hover:border-accent/40 hover:bg-accent-soft hover:shadow-glow-sm"
+              >
+                <span className="text-2xl" aria-hidden>
+                  📰
+                </span>
+                <div>
+                  <p className="font-medium text-ink">DailyFold</p>
+                  <p className="text-sm text-ink-muted">
+                    News reader, For You feed, notifications, account help
+                  </p>
+                </div>
+              </a>
+              <a
+                href="mailto:support@gloverlabsstudio.com?subject=Cavaro%20Cigar%20Support"
                 className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4 transition-all hover:border-accent/40 hover:bg-accent-soft hover:shadow-glow-sm"
               >
                 <span className="text-2xl" aria-hidden>
@@ -44,8 +58,8 @@ export default function SupportPage() {
             <p className="mb-4 text-ink-muted">
               For general questions, feedback, or partnership inquiries:
             </p>
-            <a href="mailto:hello@gloverlabs.com" className="text-link">
-              hello@gloverlabs.com →
+            <a href="mailto:hello@gloverlabsstudio.com" className="text-link">
+              hello@gloverlabsstudio.com →
             </a>
           </div>
 
@@ -56,6 +70,20 @@ export default function SupportPage() {
               <li>• My data isn&apos;t syncing — what should I do?</li>
               <li>• Can I export my cigar collection?</li>
               <li>• How do I report a bug?</li>
+              <li>
+                • DailyFold: how do I delete my account? Open the Profile tab in
+                the app and choose delete account.
+              </li>
+              <li>
+                • DailyFold: how do I turn off notifications? Use the
+                notification settings in the Profile tab, or your device&apos;s
+                Settings.
+              </li>
+              <li>
+                • DailyFold: an article won&apos;t open or looks wrong? Send us
+                the story title and source. Articles are published by their
+                original sources.
+              </li>
             </ul>
             <p className="mt-4 text-sm text-ink-muted/80">
               Include your app name and a brief description when you reach out.

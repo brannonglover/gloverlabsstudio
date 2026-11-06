@@ -51,10 +51,10 @@ export default function TermsPage() {
               credentials and for all activity under your account. Notify us
               promptly at{" "}
               <a
-                href="mailto:support@gloverlabs.com"
+                href="mailto:support@gloverlabsstudio.com"
                 className="text-link"
               >
-                support@gloverlabs.com
+                support@gloverlabsstudio.com
               </a>{" "}
               if you suspect unauthorized access.
             </p>
@@ -203,10 +203,10 @@ export default function TermsPage() {
             <p>
               Questions about these Terms:{" "}
               <a
-                href="mailto:hello@gloverlabs.com"
+                href="mailto:hello@gloverlabsstudio.com"
                 className="text-link"
               >
-                hello@gloverlabs.com
+                hello@gloverlabsstudio.com
               </a>
               . App support:{" "}
               <Link

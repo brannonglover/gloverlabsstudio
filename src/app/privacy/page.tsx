@@ -13,7 +13,7 @@ export default function PrivacyPage() {
     <main className="min-h-screen">
       <article className="max-w-3xl mx-auto px-6 py-16 md:py-24">
         <h1 className="page-header mb-2 font-display">Privacy Policy</h1>
-        <p className="mb-12 text-sm text-ink-muted">Last updated: June 2, 2026</p>
+        <p className="mb-12 text-sm text-ink-muted">Last updated: November 6, 2026</p>
 
         <div className="prose-body legal-section">
           <section>
@@ -172,10 +172,10 @@ export default function PrivacyPage() {
               delete, or export personal information, or to object to or restrict
               certain processing. To make a request, email{" "}
               <a
-                href="mailto:hello@gloverlabs.com"
+                href="mailto:hello@gloverlabsstudio.com"
                 className="text-link"
               >
-                hello@gloverlabs.com
+                hello@gloverlabsstudio.com
               </a>
               . We may need to verify your identity before responding.
             </p>
@@ -212,7 +212,61 @@ export default function PrivacyPage() {
 
           <section>
             <h2>
-              11. Changes to this policy
+              11. DailyFold
+            </h2>
+            <p className="mb-3">
+              DailyFold is a news and article reader. In addition to the
+              information described above, DailyFold works as follows:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong className="text-ink">Account.</strong> An account is
+                optional to browse but required to personalize your feed. When
+                you register we collect your name, email address, and password,
+                handled by our authentication provider.
+              </li>
+              <li>
+                <strong className="text-ink">Reading preferences.</strong> Your
+                likes, saved articles, chosen interests (topics, sources, sports
+                teams, custom keywords), and blocked topics are used to build
+                your For You feed. These are stored on your device.
+              </li>
+              <li>
+                <strong className="text-ink">Push notifications.</strong> If you
+                enable notifications, we store your device&apos;s push token
+                together with a summary of your interests and settings on our
+                servers so we can send stories and match alerts relevant to you.
+                You can turn notifications off in the app or in your device
+                settings, and doing so stops them.
+              </li>
+              <li>
+                <strong className="text-ink">Third-party content.</strong>{" "}
+                Articles and videos are provided by their original publishers
+                and platforms. When you open a story or play a video, you may be
+                sent to or served by that publisher, whose own privacy policy
+                applies. DailyFold does not sell your data and does not use it
+                for advertising or cross-app tracking.
+              </li>
+              <li>
+                <strong className="text-ink">Deleting your account.</strong> You
+                can delete your account at any time from the Profile tab in the
+                app. This permanently removes your account and the push
+                notification registrations associated with it. You can also
+                email{" "}
+                <a
+                  href="mailto:support@gloverlabsstudio.com"
+                  className="text-link"
+                >
+                  support@gloverlabsstudio.com
+                </a>
+                .
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>
+              12. Changes to this policy
             </h2>
             <p>
               We may update this Privacy Policy from time to time. We will post
@@ -224,15 +278,15 @@ export default function PrivacyPage() {
 
           <section>
             <h2>
-              12. Contact us
+              13. Contact us
             </h2>
             <p>
               Privacy questions or requests:{" "}
               <a
-                href="mailto:hello@gloverlabs.com"
+                href="mailto:hello@gloverlabsstudio.com"
                 className="text-link"
               >
-                hello@gloverlabs.com
+                hello@gloverlabsstudio.com
               </a>
               . App support:{" "}
               <Link
